@@ -1,0 +1,38 @@
+# Alfred RAG - Document Chatbot 📄🤖
+
+A conversational AI chatbot that answers questions based on a document you provide.
+Built with Python and Google's Gemini API, using a custom RAG (Retrieval Augmented Generation) system.
+
+## How it Works
+1. Loads a text document and splits it into chunks
+2. When you ask a question, it retrieves the most relevant chunks using keyword matching
+3. Injects the retrieved context into the prompt
+4. Alfred answers based on the document content
+
+## Features
+- 📄 Document-based question answering (RAG)
+- 💬 Conversational memory across sessions
+- ⌨️ Streaming responses
+- 🎩 Custom personality via system prompt
+
+## Technologies Used
+- Python
+- Google Gemini API
+- google-genai library
+
+## How to Run
+1. Clone the repository
+2. Install dependencies: `pip install google-genai`
+3. Add your document as `data.txt` in the project folder
+4. Set your `Gemini_api` as an environment variable
+5. Run: `py alfred_rag.py`
+
+## What I Learned
+- Building a RAG system from scratch
+- Text retrieval using keyword scoring
+- Chunking and processing documents
+- Augmenting prompts with retrieved context
+- How real RAG systems work under the hood
+
+## Related Projects
+- [Alfred Chatbot](https://github.com/Saadbihmid/My-First-ChatBot) — the chatbot that inspired this project
